@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <style>
+        li{
+            color:red;
+            text-decoration:underline;
+        }
+        #select{ /*id의 선택자 # */
+            font-size:50px;
+        }
+        .deactive{ /*class의 선택자 . */
+            text-decoration: line-through;
+        }
+       </style>
+    </head>
+        <body>
+            <h1 class="deactive">수업의 순서</h1>
+            <ul> <!--왜 여기id대신class를 넣었냐면 id는 단 한번 등장, class는 여러번 등장시켜서 서로 다른 태그도 그룹핑해줄 수 있기때문에 사용하는 것-->
+                <li class="active">HTML</li>
+                <li id="select">CSS</li>
+                <li class="active">javascript</li>
+            </ul>
+        </body> 
+</html>

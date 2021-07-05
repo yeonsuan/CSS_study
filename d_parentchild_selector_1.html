@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            ul li{ /*ul 밑의 li만 효과주고 싶을때!*/
+                color:red;
+            }
+            #lecture>li{  /* > 표시는 렉쳐 바로밑의 li만!!*/
+                border :1px solid red; /*border는 굵기*/
+                color:blue; /*컬러는 밑에도 다 바꿈!*/
+            }
+            ul,ol{ 
+                background-color:powderblue;
+            }
+            /* 두번 쓰지않도록 위에서 'ul,ol' 이런식으로 적기
+            ol{
+                background-color:powderblue;
+            } */
+        </style>
+    </head>
+        <body>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>javascript</li>
+            </ul>
+            <ol id="lecture">
+                <li>HTML</li>
+                <li>CSS</li>
+                    <ol>
+                        <li>selector</li>
+                        <li>declaration</li>
+                    </ol>
+                <li>javascript</li>
+            </ol>
+        </body>
+    
+</html>
